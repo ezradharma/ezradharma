@@ -1,0 +1,157 @@
+body 
+/* Setting the default font for the whole site, 
+the color of the font,
+and a default background color incase video fails to load */
+{
+    font-size: 100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.15em;
+    color: white;
+    background-color: black;
+    
+}
+
+#backgroundVideo
+/* The video in order to be a background, 
+it must be the lower layer in terms of visible elements,
+positions is locked that the user cannot move the video,
+it should be able to auto adjust in size to fill the canvas of the site
+*/
+{
+    position: fixed;
+    min-width: 100%;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+        
+}
+#logo 
+/*
+This is really the "glass" to create a tint in order to make
+content of the site visible over the background video.
+*/
+{
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.125);
+    
+    width: 100%;
+    height: 100%;
+    display: block;
+    
+    
+    
+    
+}
+#logo img
+{
+    padding: 20px;
+    top: 0;
+    left: 0;
+    height: 24%;
+    margin-top: 25px;
+    display: block;
+}
+
+ul
+/*
+Default style and position,
+set to be always below the logo with borders
+*/
+{
+    position: fixed;
+    width: 100%;
+    padding: px;
+    top: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+}
+ul#navigation li
+/*
+List with no numbering/dots/etc,
+Allows the list to be front and center to be easily operated
+The list hold quick links to the game/social and access to the site
+*/
+{
+    list-style-type: none;
+    font-size: 300%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 1%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+a
+{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: 1px 1px px black;
+}
+a:hover
+{
+    color: orange;
+}
+a.on
+{
+    color: red;
+}
+
+
+/*
+List with inline style.
+Used in the main parts of the site
+Reduced vertial size to allow more content below it
+*/
+ul#navigation2 li
+{
+    display: inline;
+    font-size: 200%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+/*Write up of info*/
+p
+{
+    font-size: 150%;
+    position: fixed;
+    text-align: center;
+    width: 80%;
+    top: 50%;
+    text-shadow: 1px 1px px black;
+
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+/*page title*/
+h1
+{
+    font-size: 175%;
+    position: fixed;
+    text-align: center;
+    width: 80%;
+    top: 42.5%;
+    text-shadow: 1px 1px px black;
+
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+/* Credits with rows per developer*/
+table
+{
+    font-size: 150%;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    border: 1px solid white;
+}
+
