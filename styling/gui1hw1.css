@@ -61,7 +61,6 @@ set to be always below the logo with borders
 {
     position: fixed;
     width: 100%;
-    padding: px;
     top: 35%;
     margin-left: auto;
     margin-right: auto;
@@ -88,7 +87,7 @@ a
     color: white;
     text-transform: uppercase;
     text-decoration: none;
-    text-shadow: 1px 1px px black;
+    text-shadow: 1px 1px 2px black;
 }
 a:hover
 {
@@ -122,7 +121,7 @@ p
     text-align: center;
     width: 80%;
     top: 50%;
-    text-shadow: 1px 1px px black;
+    text-shadow: 1px 1px 2px black;
 
     margin-left: 10%;
     margin-right: 10%;
@@ -136,7 +135,7 @@ h1
     text-align: center;
     width: 80%;
     top: 42.5%;
-    text-shadow: 1px 1px px black;
+    text-shadow: 1px 1px 2px black;
 
     margin-left: 10%;
     margin-right: 10%;
