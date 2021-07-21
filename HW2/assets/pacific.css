@@ -14,7 +14,7 @@ header, hgroup, nav, footer, figure, figcaption, aside, section, article {
 
 /*Gradient bg stops towards the bottom, colored blue below it*/
 body {
-	background-image:url('/HW2/assets/ptrbackground.jpg');
+	background-image:url('ptrbackground.jpg');
 	background-position-x: left;
 	background-repeat: repeat-x;
 	background-color: #00569f;
@@ -40,7 +40,7 @@ div#wrapper {
 #wrapper header {
 	grid-column: 1/4;
 	color: white;
-	background-image:url('/HW2/assets/sunset.jpg');
+	background-image:url('sunset.jpg');
 	background-position: right;
 	background-repeat: no-repeat;
 	background-color: #000034;
@@ -83,7 +83,7 @@ div#content {
 #content li {
     font-size: 16px;
 	list-style-position: inside;
-	list-style-image: url("/HW2/assets/marker.gif")
+	list-style-image: url("marker.gif")
 }
 
 p {
