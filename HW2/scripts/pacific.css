@@ -1,0 +1,134 @@
+/*
+File: pacific.css
+GUI Assignment: Creating Your First Web Page
+Ezra Dharma, UMass Lowell Computer Science, edharma@cs.uml.edu
+Copyright (c) 2021 by Ezra. All rights reserved. May be freely copied or excerpted for educational purposes with credit to the author.
+updated by ED on July 21, 2021 at 12:40 PM
+Reference: https://www.w3schools.com/css/default.asp
+Using on this file to edit the style of the site to meet the styling from the provided images.
+*/
+
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+
+/*Gradient bg stops towards the bottom, colored blue below it*/
+body {
+	background-image:url('/HW2/assets/ptrbackground.jpg');
+	background-position-x: left;
+	background-repeat: repeat-x;
+	background-color: #00569f;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+
+h1, h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+/*forced 80% w/min 600px, uses grid into other to sep. nav and content.  */
+div#wrapper {
+    margin-left: auto;
+	margin-right: auto;
+    width: 80%;
+	display: grid;
+    background-color: rgb(140, 198, 228);
+	grid-template-columns: 190px 410px;
+}
+/*resort image is beside a solid color*/
+#wrapper header {
+	grid-column: 1/4;
+	color: white;
+	background-image:url('/HW2/assets/sunset.jpg');
+	background-position: right;
+	background-repeat: no-repeat;
+	background-color: #000034;
+}
+/*fixed width*/
+nav {
+	grid-column: 1/2;
+	margin: 0;
+}
+
+/*no bullets*/
+nav ul {
+	list-style-type: none;
+	padding-left: 20px;
+	font-size: 1.2em;
+}
+
+/*no underlining*/
+nav a {
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+
+nav a:visited {
+	color: #344873;
+}
+
+nav a:hover {
+	color: #FFFFFF;
+}
+
+div#content {
+	grid-column: 2/4;
+	background-color: #fff;
+	padding-left: 25px;
+}
+
+/*special bullets*/
+#content li {
+    font-size: 16px;
+	list-style-position: inside;
+	list-style-image: url("/HW2/assets/marker.gif")
+}
+
+p {
+    padding-right: 24px;
+    font-size: 16px;
+}
+
+h1 {
+	padding: 10px;
+	margin: 0;
+}
+
+h2 {
+	grid-column: 1/4;
+	color: #3399CC;
+    font-size: 24px;
+}
+
+img {
+	padding-right: 20px;
+    width: 320px;
+	float: left;
+}
+
+/*special coloring*/
+.resort {
+	font-weight: bold;
+	color: #3399CC;
+}
+
+#contact {
+	grid-column: 1/2;
+	font-size: 14.5px;
+}
+
+dt {
+	color: #000033;
+}
+
+footer {
+	grid-column: 2/4;
+	font-family: Georgia, "Times New Roman", serif;
+	font-style: italic;
+	font-size: 9pt;
+	padding: 20px;
+	background-color: #fff;
+}
+
