@@ -29,15 +29,15 @@ function readInput() {
       return;
     }
 
-    if (xLT >= "100" || xRT >= "100" || yTop >= "100" || yBottom >= "100") {
-        document.getElementById("status").innerHTML += "Check your values for numbers greater than 100.<br>";
-        return;
-    }
+    if (xLT > "100" || xRT > "100" || yTop > "100" || yBottom > "100") {
+      document.getElementById("status").innerHTML += "Check your values for numbers greater than 100.<br>";
+      return;
+  }
 
-    if (xLT <= "-100" || xRT <= "-100" || yTop <= "-100" || yBottom <= "-100") {
-        document.getElementById("status").innerHTML += "Check your values for numbers less than -100.<br>";
-        return;
-    }
+  if (xLT < "-100" || xRT < "-100" || yTop < "-100" || yBottom < "-100") {
+      document.getElementById("status").innerHTML += "Check your values for numbers less than -100.<br>";
+      return;
+  }
     
     /*
         Swap cases:
