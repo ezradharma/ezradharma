@@ -30,7 +30,7 @@ function readInput() {
     }
 
     if (xLT > "100" || xRT > "100" || yTop > "100" || yBottom > "100") {
-      document.getElementById("status").innerHTML += "UP Check your values for numbers greater than 100.<br>";
+      document.getElementById("status").innerHTML += "Check your values for numbers greater than 100.<br>";
       return;
   }
 
