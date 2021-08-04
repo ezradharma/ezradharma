@@ -3,8 +3,8 @@ File: example.js
 GUI Assignment: inClass 5
 Ezra Dharma, UMass Lowell Computer Science, edharma@cs.uml.edu
 Copyright (c) 2021 by Ezra. All rights reserved. May be freely copied or excerpted for educational purposes with credit to the author.
-updated by ED on Aug 4, 2021 at 7:30 PM
-js to edit groceries list.
+updated by ED on Aug 4, 2021 at 7:45 PM
+js to edit groceries list, all features were completed.
 */
 
 var uList = document.getElementById("page").getElementsByTagName("ul") [0];
