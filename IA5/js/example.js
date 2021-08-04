@@ -24,7 +24,7 @@ uList.prepend(newItem2);
 // ADD A CLASS OF COOL TO ALL LIST ITEMS
 
 var allItems = document.querySelectorAll('li');
-allItems.forEach((allItems) => (allItems.className += "COOL"));
+allItems.forEach((allItems) => (allItems.className += "cool"));
 
 
 // ADD NUMBER OF ITEMS IN THE LIST TO THE HEADING
@@ -32,10 +32,3 @@ allItems.forEach((allItems) => (allItems.className += "COOL"));
 var header = document.getElementById("page").getElementsByTagName('h2') [0];
 
 header.innerHTML += '<span style="color:white">' + allItems.length + '</span>'; //<span> colors text
-
-//Change list bg color
-
-//color #6CC0AC, top #76D3BD, bot #509080
-allItems.forEach((allItems) => (allItems.style.backgroundColor = "#6CC0AC"));
-allItems.forEach((allItems) => (allItems.style.borderTopColor = "#76D3BD"));
-allItems.forEach((allItems) => (allItems.style.borderBottomColor = "#509080"));
