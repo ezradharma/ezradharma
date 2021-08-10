@@ -85,10 +85,10 @@ The list hold quick links to the game/social and access to the site
 */
 {
     list-style-type: none;
-    font-size: 300%;
+    font-size: 200%;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding: 1%;
+    padding: .5%;
     margin-left: 5px;
     margin-right: 5px;
 }
