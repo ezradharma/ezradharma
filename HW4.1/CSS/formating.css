@@ -1,0 +1,37 @@
+/*
+File: formating.css
+GUI Assignment: HW4
+Ezra Dharma, UMass Lowell Computer Science, edharma@cs.uml.edu
+Copyright (c) 2021 by Ezra. All rights reserved. May be freely copied or excerpted for educational purposes with credit to the author.
+updated by ED on Aug 9, 2021 at 9:00 PM
+Same formating as HW3.
+*/
+
+/* Background setup, font setup*/
+body { 
+    background-image: linear-gradient(teal, blue);
+    background-size: cover;
+    height: 1000px;
+    font-size: larger;
+    background-repeat: no-repeat;
+    background-color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+/* Title detail*/
+h1 {
+    font-family: Arial, Helvetica, serif;
+}
+
+/* The special table, scroll active only when needed*/
+div.container {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    overflow: auto
+}
+/* Status color to make easy to notice*/
+#status
+{
+    color:yellow;
+}

@@ -1,0 +1,92 @@
+<!--
+File: tablepage.html
+GUI Assignment: HW4
+Ezra Dharma, UMass Lowell Computer Science, edharma@cs.uml.edu
+Copyright (c) 2021 by Ezra. All rights reserved. May be freely copied or excerpted for educational purposes with credit to the author.
+updated by ED on Aug 9, 2021 at 11:00 PM
+Part 2: Sliders added, re-config buttons to allow saving and removal of tabs, added needed scripts.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Multiplication Table Generator</title>
+    
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" type="text/css">
+    <link rel="stylesheet" href="CSS/formating.css">
+
+  </head>
+  <body>
+    <div>
+        <h1>Multiplication Table</h1>
+        <hr />
+        <p style="text-align: center;">Create custom multiplication tables! </p>
+        <hr />
+        <p>Using the table below, add two x values and two y values regradless of order as long as the values are valid.
+        </p>
+        <p id="warning"><p>The values that are not valid include the following: </p>
+        <ul class="invalids">
+            <li>Non-numbers</li>
+            <li>Values over 100</li>
+            <li>Values under -100</li>
+            <li>Decimal numbers</li>
+            <li>Empty fields</li>
+        </ul>
+        
+        <p id="features"><p>The table has the following rules: </p>
+        <ul class="rules">
+            <li>Upper Left most has the smallest values.</li>
+            <li>Values going right will increase in the X axis</li>
+            <li>Values going down will increase in the Y axis</li>
+        </ul>
+
+    </div>
+    <hr />
+    <div>
+        <form id="inputs" method="post">
+            1st X Value: <input max="100" min="-100" id="ltX" step="1" type="number" value = "0" required/> <br />
+            <div id="xSlide1" class="mySlider" ></div>
+            2nd X Value: <input max="100" min="-100" id="rtX" step="1" type="number" value = "0" required/> <br />
+            <div id="xSlide2" class="mySlider" ></div>
+            <hr />
+            1st Y Value: <input max="100" min="-100" id="tY" step="1" type="number" value = "0" required/> <br />
+            <div id="ySlide1" class="mySlider" ></div>
+            2nd Y Value: <input max="100" min="-100" id="bY" step="1" type="number" value = "0" required/> <br />
+            <div id="ySlide2" class="mySlider" ></div>
+            <hr />
+            <button type="submit" >
+              Save Current Table
+            </button>
+            <button type="button" onclick="return showEx();">
+                Build Example
+            </button>
+            <button type="button" onclick="return clearAll();">
+                Start Over/Clear All Tabs
+            </button>
+            <button type="button" onclick="return killTab();">
+                Clear Last Tab
+          </button>
+          <p id="status"></p>
+        </form>
+    </div>
+    <div class="container">
+        <table id="resultingTable"></table>
+      </div>
+    <div id= "tableSaves">
+        <ul></ul>
+
+    </div>
+
+
+    <script src="JS/scriptHW4.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="JS/formValidChecking.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="JS/slideNTabs.js"></script>
+   
+
+  </body>
+</html>
